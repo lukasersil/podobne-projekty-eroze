@@ -1,0 +1,3 @@
+podklady/navrh/*
+!podklady/navrh/.gitkeep
+.DS_Store

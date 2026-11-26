@@ -1,8 +1,22 @@
-# Podobné projekty: harmonizace měření vodní eroze půdy
+# Podobné projekty: agent a rešerše
 
-Rešerše projektů, sítí a akcí k tématu harmonizace experimentálního měření vodní eroze půdy (podklad pro COST Open Call OC-2026-1).
+Agent pro Claude Code, který k tématu najde projekty, sítě a akce, které už na něm pracují (STARFOS, CEP, CORDIS, COST, OpenAIRE). Doloží poptávku a napíše anglický odstavec State-of-the-art.
 
-- [2026-11-26-podobne-projekty.pdf](2026-11-26-podobne-projekty.pdf): výstup v PDF
-- [2026-11-26-podobne-projekty.md](2026-11-26-podobne-projekty.md): stejný obsah v Markdownu
+## Obsah
+- [`.claude/skills/podobne-projekty/SKILL.md`](.claude/skills/podobne-projekty/SKILL.md): definice agenta
+- [`CLAUDE.md`](CLAUDE.md): pravidla složky
+- [`tema.md`](tema.md): karta tématu (teď vyplněná pro první běh)
+- [`JAK-SPUSTIT.md`](JAK-SPUSTIT.md): jak agenta spustit
+- [`POSTUP.md`](POSTUP.md): jak agent vznikl a jak proběhl první běh
+- [`vystupy/`](vystupy/): výsledky. První běh je [2026-11-26 v PDF](vystupy/2026-11-26-podobne-projekty.pdf) a [v Markdownu](vystupy/2026-11-26-podobne-projekty.md).
 
-Údaje v tabulkách pocházejí z registrů STARFOS, CEP, CORDIS, COST a OpenAIRE ke dni 2026-11-26. Než je použijete, projděte oddíl „Co ověřit ručně“.
+Text návrhu (`podklady/navrh/`) v repozitáři záměrně není.
+
+## Spuštění
+Naklonuj repozitář, vyplň `tema.md`, vlož návrh do `podklady/navrh/` a v Claude Code v této složce napiš:
+
+```
+/podobne-projekty
+```
+
+Údaje ve výstupech platí ke dni běhu. Než je použiješ, projdi oddíl „Co ověřit ručně“.
